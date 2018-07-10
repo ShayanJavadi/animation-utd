@@ -12,13 +12,13 @@ const Hero = () => (
     <Header />
     <div className="text-container">
       <h1 className={bigFontClassNames}>
-Welcome to
+        Welcome to
       </h1>
       <h1 className={bigFontClassNames}>
-the
+        the
       </h1>
       <h1 className={bigFontClassNames}>
-Animation Guild At UTD
+        Animation Guild At UTD
       </h1>
     </div>
     <div className="button-container">
