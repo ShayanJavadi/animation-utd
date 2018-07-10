@@ -31,11 +31,13 @@ const Header = () => (
             <a className="navbar-item" href="https://bulma.io/">
               Contact
             </a>
-            <Button
-              text="Keep In Touch"
-              raised
-              hasShadow
-            />
+            <a className="navbar-item" href="https://bulma.io/">
+              <Button
+                text="Keep In Touch"
+                raised
+                hasShadow
+              />
+            </a>
           </a>
         </div>
       </div>
