@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: "Animation Guild At UTD",
   },
-  plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-sass'],
-}
+  plugins: ["gatsby-plugin-react-helmet", "gatsby-plugin-sass"],
+};

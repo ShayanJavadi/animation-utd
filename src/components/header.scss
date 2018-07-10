@@ -1,0 +1,23 @@
+.header-component {
+  height: 100px;
+  .logo {
+    max-height: none;
+    height: auto;
+    max-width: 200px;
+  }
+
+  .button-component {
+    margin-left: 20px;
+  }
+
+  a.navbar-item {
+    color: #222;
+    font-weight: bold;
+    margin-right: 10px
+  }
+
+  a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+    background-color: inherit;
+    color: inherit;
+  }
+}

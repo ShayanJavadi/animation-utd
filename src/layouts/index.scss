@@ -1,0 +1,13 @@
+
+
+@import "~bulma/sass/utilities/initial-variables";
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,400,700");
+@import "variables.scss";
+@import "../common/index.scss";
+@import "../components/index.scss";
+
+
+html, * {
+  font-family: 'Nunito', sans-serif !important;
+}
+@import "~bulma";
