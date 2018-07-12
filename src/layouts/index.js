@@ -12,9 +12,9 @@ const Layout = ({ children, data }) => (
         { name: "keywords", content: "sample, something" },
       ]}
     />
-    <div className="test container">
+    <main>
       {children()}
-    </div>
+    </main>
   </div>
 );
 

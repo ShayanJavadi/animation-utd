@@ -1,9 +1,14 @@
 import React from "react";
+import classNames from "classnames";
 import logo from "../../assets/images/logo-text.png";
 import Button from "../common/Button";
 
+const PACKAGE_NAME = "header-component";
+
+const navClassNames = classNames(PACKAGE_NAME, "navbar", "is-fixed-top");
+
 const Header = () => (
-  <nav className="header-component navbar" role="navigation" aria-label="main-navigation">
+  <nav className={navClassNames} role="navigation" aria-label="main-navigation">
     <div className="container">
       <div className="navbar-brand">
         <a className="navbar-item">

@@ -3,14 +3,14 @@ import classNames from "classnames";
 import Button from "../common/Button";
 import Header from "./Header";
 
-const HERO_COMPONENT = "hero-component";
+const PACKAGE_NAME = "hero-section-component hero";
 
+const heroSectionClassNames = classNames(PACKAGE_NAME, "hero");
 const bigFontClassNames = classNames("huge-font", "title");
 
-const Hero = () => (
-  <section className={HERO_COMPONENT}>
-    <Header />
-    <div className="text-container">
+const HeroSection = () => (
+  <section className={heroSectionClassNames}>
+    <div className="text-container hero-body container">
       <h1 className={bigFontClassNames}>
         Welcome to
       </h1>
@@ -20,13 +20,14 @@ const Hero = () => (
       <h1 className={bigFontClassNames}>
         Animation Guild At UTD
       </h1>
+      <div className="button-container">
+        <Button
+          text="Learn More"
+        />
+      </div>
     </div>
-    <div className="button-container">
-      <Button
-        text="Learn More"
-      />
-    </div>
+    
   </section>
 );
 
-export default Hero;
+export default HeroSection;

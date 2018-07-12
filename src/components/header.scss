@@ -1,5 +1,7 @@
 .header-component {
-  height: 100px;
+  height: 85px;
+  box-shadow: $shadow;
+  
   .logo {
     max-height: none;
     height: auto;
