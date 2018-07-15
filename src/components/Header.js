@@ -24,26 +24,24 @@ const Header = () => (
         <div className="navbar-start" />
         <div className="navbar-end">
           <a className="navbar-item" href="https://bulma.io/">
-            <a className="navbar-item" href="https://bulma.io/">
-              Home
-            </a>
-            <a className="navbar-item" href="https://bulma.io/">
-              Events
-            </a>
-            <a className="navbar-item" href="https://bulma.io/">
-              About
-            </a>
-            <a className="navbar-item" href="https://bulma.io/">
-              Contact
-            </a>
-            <a className="navbar-item" href="https://bulma.io/">
-              <Button
-                text="Keep In Touch"
-                raised
-                hasShadow
-              />
-            </a>
+            Home
           </a>
+          <a className="navbar-item" href="https://bulma.io/">
+            Events
+          </a>
+          <a className="navbar-item" href="https://bulma.io/">
+            About
+          </a>
+          <a className="navbar-item" href="https://bulma.io/">
+            Contact
+          </a>
+          <div className="navbar-item" href="https://bulma.io/">
+            <Button
+              text="Keep In Touch"
+              raised
+              hasShadow
+            />
+          </div>
         </div>
       </div>
     </div>

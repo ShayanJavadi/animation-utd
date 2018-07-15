@@ -1,7 +1,6 @@
 .header-component {
   height: 85px;
   box-shadow: $shadow;
-  
   .logo {
     max-height: none;
     height: auto;
@@ -14,7 +13,6 @@
 
   a.navbar-item {
     color: #222;
-    font-weight: bold;
     margin-right: 10px
   }
 

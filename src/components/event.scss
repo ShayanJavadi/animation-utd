@@ -1,0 +1,42 @@
+.event-component {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin-top: 80px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  .event-image {
+    display: flex;
+    flex: 3;
+
+    img {
+      height: auto;
+      width: auto;
+      max-height: 300px;
+    }
+  }
+
+  .event-content {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      color: $primary;
+    }
+
+    h3 {
+      color: $secondary;
+    }
+
+    h2, h3 {
+      font-weight: 300;
+      margin: 0;
+    }
+
+    flex: 4;
+    padding: 0 1.5rem;
+  }
+}

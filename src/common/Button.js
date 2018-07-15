@@ -18,7 +18,7 @@ const Header = ({
   );
 
   return (
-    <a onClick={onPress} className={classes}>
+    <a href={onPress} className={classes} target="_blank">
       {text}
     </a>
   );

@@ -1,14 +1,30 @@
 
 
-@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/_all.sass";
+@import "~bulma/sass/layout/_all.sass";
+@import "~bulma/sass/grid/_all.sass";
+@import "~bulma/sass/elements/_all.sass";
+@import "~bulma/sass/components/_all.sass";
+@import "~bulma/sass/base/generic.sass";
+@import "~bulma/sass/base/helpers.sass";
+@import "./reset.sass";
 @import url("https://fonts.googleapis.com/css?family=Nunito:200,400,700");
 @import "variables.scss";
 @import "../common/index.scss";
 @import "../components/index.scss";
 
-
-html, * {
-  font-family: 'Nunito', sans-serif !important;
+@font-face {
+  font-family: 'Futura';
+  src: url('../../assets/fonts/futura-light.ttf') format('ttf');
+  font-weight: 300;
+  font-style: normal;
 }
 
-@import "~bulma";
+html, * {
+  font-family: 'Futura', sans-serif;
+  font-weight: 300;
+}
+
+.title {
+  font-weight: 300;
+}
