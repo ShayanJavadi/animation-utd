@@ -1,10 +1,16 @@
 .section-header-component {
   height: 150px;
-  display: flex;
-  align-items: center;
+
+  .container {
+    flex: 1;
+  }
 
   .title {
     text-align: center;
     color: $primary;
+  }
+
+  .title-secondary {
+    color: $secondary;
   }
 }

@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import MissionStatementSection from "../components/MissionStatementSection";
 import PhotoReelSection from "../components/PhotoReelSection";
 import EventsSection from "../components/EventsSection";
+import MailingListSection from "../components/MailingListSection";
 
 const IndexPage = (props) => {
   const events = props.data.allMarkdownRemark.edges;
@@ -14,6 +15,7 @@ const IndexPage = (props) => {
       <MissionStatementSection />
       <PhotoReelSection />
       <EventsSection events={events} />
+      <MailingListSection />
     </div>
   );
 };

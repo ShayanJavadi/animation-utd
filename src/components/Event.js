@@ -11,7 +11,7 @@ const Event = ({ event }) => {
 
   return (
     <div className="container event-component">
-      <div className="event-image">
+      <div className="event-image image is-2by1">
         <img src={imageUrl} alt="" />
       </div>
       <div className="event-content container content">
