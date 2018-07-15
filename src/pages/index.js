@@ -23,7 +23,7 @@ export default IndexPage;
 export const query = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { order: ASC, fields: [frontmatter___date] }
       filter: { fileAbsolutePath: { regex: "/(\/data\/events)/.*\\.md$/" } }
       ) {
       edges {
