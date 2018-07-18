@@ -1,3 +1,21 @@
+.input-container {
+  &:hover {
+    border-color: transparent;
+    opacity: 0.7;
+  }
+}
+
 .input-component {
+  border-color: transparent;
+  box-shadow: $shadow-left-skewed;
+  height: 42px;
+  &:hover {
+    border-color: transparent;
+  }
   
+  &:active, &:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: $shadow-left-skewed;
+  }
 }

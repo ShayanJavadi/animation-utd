@@ -9,8 +9,8 @@ const classes = classNames(
   "is-rounded",
 );
 
-export default () => (
-  <div>
-    <input className={classes} type="text" placeholder="Rounded input" />
+export default ({ placeholder, type, className }) => (
+  <div className="input-container">
+    <input className={classes} type="text" placeholder={placeholder} />
   </div>
 );

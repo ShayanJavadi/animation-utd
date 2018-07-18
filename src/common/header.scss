@@ -1,0 +1,29 @@
+.header-component {
+  height: 85px;
+  box-shadow: $shadow;
+  .logo {
+    max-height: none;
+    height: auto;
+    max-width: 200px;
+  }
+
+  .button-component {
+    margin-left: 20px;
+  }
+
+  .navbar-item {
+    &.text-link {
+      a {
+      color: #222;
+      margin-right: 10px
+      }
+
+      a:hover, a.is-active {
+        background-color: inherit;
+        color: inherit;
+      }
+    }
+  }
+
+  
+}

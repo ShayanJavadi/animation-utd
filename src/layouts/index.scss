@@ -25,6 +25,15 @@ html, * {
   font-weight: 300;
 }
 
+body, button, input, select, textarea {
+  font-family: 'Futura', sans-serif;
+}
+
+.input:focus, .input.is-focused, .input:active, .input.is-active, .textarea:focus, .textarea.is-focused, .textarea:active, .textarea.is-active {
+    border-color: transparent;
+
+}
+
 .title {
   font-weight: 300;
 }

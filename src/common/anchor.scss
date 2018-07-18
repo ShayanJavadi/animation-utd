@@ -1,0 +1,28 @@
+.anchor-container {
+
+}
+
+.anchor-component {
+  color: $primary;
+  
+  &.is-secondary {
+    color: $secondary;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  &.is-underlined {
+    border-bottom: 1.5px solid $primary;
+
+    &.is-underlined-secondary {
+      border-bottom: 1.5px solid $secondary;
+    }
+  }
+
+  &:hover {
+    color: $primary;
+    opacity: .7;
+  }
+}

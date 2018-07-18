@@ -1,8 +1,16 @@
 .section-header-component {
   height: 150px;
 
-  .container {
+  .section-header-container {
     flex: 1;
+    height: 120px;
+    justify-content: space-around;
+  }
+  
+  .section-header-text-container {
+    h1 {
+      margin: 0;
+    }
   }
 
   .title {

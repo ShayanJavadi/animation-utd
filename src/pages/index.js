@@ -1,10 +1,11 @@
 import React from "react";
 import HeroSection from "../components/HeroSection";
-import Header from "../components/Header";
+import Header from "../common/Header";
 import MissionStatementSection from "../components/MissionStatementSection";
 import PhotoReelSection from "../components/PhotoReelSection";
 import EventsSection from "../components/EventsSection";
 import MailingListSection from "../components/MailingListSection";
+import Footer from "../common/Footer";
 
 const IndexPage = (props) => {
   const events = props.data.allMarkdownRemark.edges;
@@ -16,6 +17,7 @@ const IndexPage = (props) => {
       <PhotoReelSection />
       <EventsSection events={events} />
       <MailingListSection />
+      <Footer />
     </div>
   );
 };

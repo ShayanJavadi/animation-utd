@@ -19,15 +19,15 @@ const SectionHeader = ({ children, text, isSecondary, className }) => {
     DEFAULT_TITLE_CLASSNAME,
     isSecondary && SECONDARY_TITLE_CLASSNAME,
   );
-  
-  console.log(startCase(text));
 
   return (
     <Row className={componentClasses}>
-      <Column className="container">
-        <h1 className={titleClasses}>
-          {startCase(text)}
-        </h1>
+      <Column className="container section-header-container">
+        <Row className="section-header-text-container">
+          <h1 className={titleClasses}>
+            {startCase(text)}
+          </h1>
+        </Row>
         {children}
       </Column>
     </Row>

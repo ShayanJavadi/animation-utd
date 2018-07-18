@@ -19,7 +19,9 @@ const Event = ({ event }) => {
         <h3>{`${date}, ${location}`}</h3>
         <h3>{time}</h3>
         <HTMLContent html={html} classNames="content" />
-        <Button text="Learn More" onPress={eventUrl} />
+        <div className="learn-more-button-container">
+          <Button text="Learn More" href={eventUrl} />
+        </div>
       </div>
     </div>
   );

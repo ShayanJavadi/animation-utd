@@ -1,7 +1,6 @@
 import React from "react";
 import classNames from "classnames";
 import Button from "../common/Button";
-import Header from "./Header";
 
 const PACKAGE_NAME = "hero-section-component hero";
 

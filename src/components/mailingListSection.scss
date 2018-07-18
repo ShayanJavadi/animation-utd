@@ -1,3 +1,41 @@
 .mailing-list-section-component {
- background-color: $secondary-background-color; 
+  background-color: $secondary-background-color;
+  
+  .mailing-list-section-header {
+    height: 400px;
+
+    .section-header-container{
+      height: 250px;
+    }
+  }
+
+  .input-row {
+    width: 45%;
+
+    .email-input-container {
+      display: flex;
+      flex: 5;
+      width: 100%;
+
+      .input-container {
+        width: 100%;
+      }
+    }
+
+    .add-button-container {
+      display: flex;
+      flex: 3;
+      justify-content: flex-end;
+      
+      .button-container {
+        width: 100%;
+        padding-left: 30px;
+      }
+    }
+  }
+
+  .links-row {
+    width: 17%;
+    justify-content: space-between;
+  }
 }
