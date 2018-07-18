@@ -8,7 +8,7 @@
 @import "~bulma/sass/base/generic.sass";
 @import "~bulma/sass/base/helpers.sass";
 @import "./reset.sass";
-@import url("https://fonts.googleapis.com/css?family=Nunito:200,400,700");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 @import "variables.scss";
 @import "../common/index.scss";
 @import "../components/index.scss";
@@ -21,12 +21,12 @@
 }
 
 html, * {
-  font-family: 'Futura', sans-serif;
+  font-family: 'Futura', 'Nunito', sans-serif;
   font-weight: 300;
 }
 
 body, button, input, select, textarea {
-  font-family: 'Futura', sans-serif;
+  font-family: 'Futura', 'Nunito', sans-serif;
 }
 
 .input:focus, .input.is-focused, .input:active, .input.is-active, .textarea:focus, .textarea.is-focused, .textarea:active, .textarea.is-active {
