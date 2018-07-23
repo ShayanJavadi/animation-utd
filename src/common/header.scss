@@ -1,10 +1,46 @@
 .header-component {
   height: 85px;
   box-shadow: $shadow;
+  background-color: #fff;
+  transition: all 0.2s;
+  z-index: 99999;
+
+  &.is-transparent {
+    background-color: transparent;
+    box-shadow: none;
+
+    .navbar-item {
+      &.text-link {
+        a {
+          color: #fff;
+          transition: all 0.2s;
+        }
+      }
+
+      .colored-logo {
+        opacity: 0;
+      }
+
+      .white-logo {
+        opacity: 1;
+      }
+    } 
+  }
+
   .logo {
     max-height: none;
     height: auto;
     max-width: 200px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+  }
+
+  .colored-logo {
+    opacity: 1;
+  }
+
+  .white-logo {
+    opacity: 0;
   }
 
   .button-component {
@@ -12,10 +48,15 @@
   }
 
   .navbar-item {
+    &.logo-container {
+      position: relative;
+    }
+
     &.text-link {
       a {
-      color: #222;
-      margin-right: 10px
+        color: #222;
+        margin-right: 10px;
+        transition: all 0.2s;
       }
 
       a:hover, a.is-active {
@@ -23,7 +64,5 @@
         color: inherit;
       }
     }
-  }
-
-  
+  } 
 }

@@ -1,15 +1,39 @@
 import React from "react";
 import Link from "gatsby-link";
+import Header from "../common/Header";
+import Events from "../components/EventsPageEventsSection";
+import Footer from "../common/Footer";
 
-const EventsPage = () => (
+const EventsPage = ({ data }) => (
   <div>
-    <h1>
-      events
-    </h1>
-    <Link to="/">
-      Go back to the homepage
-    </Link>
+    <Header />
+    <Events events={data.allMarkdownRemark.edges} />
+    <Footer />
   </div>
 );
 
 export default EventsPage;
+
+export const query = graphql`
+  query EventsQuey {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/(\/data\/events)/.*\\.md$/" } }
+      ) {
+      edges {
+        node {
+          id
+          html
+          frontmatter {
+            title
+            date(formatString: "dddd, MMMM DD")
+            location
+            time
+            imageUrl
+            eventUrl
+          }
+        }
+      }
+    }
+  }
+`;

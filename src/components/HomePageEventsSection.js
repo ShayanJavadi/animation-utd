@@ -3,13 +3,13 @@ import SectionHeader from "../common/SectionHeader";
 import Event from "./Event";
 import Button from "../common/Button";
 
-const PACKAGE_NAME = "events-section-component";
+const PACKAGE_NAME = "home-page-events-section-component";
 const BIG_SECTION_HEADER_CLASS_NAME = "big-section-header";
 
 const renderEvents = events => events.map(event => <Event event={event.node} />);
 
 
-const EventsSection = ({ events }) => (
+const HomePageEventsSection = ({ events }) => (
   <section className={PACKAGE_NAME}>
     <div className="container">
       <SectionHeader text="upcoming events" />
@@ -23,4 +23,4 @@ const EventsSection = ({ events }) => (
   </section>
 );
 
-export default EventsSection;
+export default HomePageEventsSection;

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import classNames from "classnames";
 import logo from "../../assets/images/logo-text.png";
+import whiteLogo from "../../assets/images/logo-text-white.png";
 import Button from "../common/Button";
 import {
   HOME_PAGE_ROUTE,
@@ -11,8 +12,16 @@ import {
 } from "./consts/routes";
 
 const PACKAGE_NAME = "header-component";
+const TRANSPARENT_NAV_BAR_CLASS = "is-transparent";
 
-const navClassNames = classNames(PACKAGE_NAME, "navbar", "is-fixed-top");
+const getClassNames = isTransparent => (
+  classNames(
+    PACKAGE_NAME,
+    "navbar",
+    "is-fixed-top",
+    isTransparent && TRANSPARENT_NAV_BAR_CLASS,
+  )
+);
 
 const renderMobileMenu = () => (
   <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -30,7 +39,7 @@ const renderMenuItem = (to, text) => (
   </div>
 );
 
-const renderMenu = () => (
+const renderMenu = isTransparent => (
   <div className="navbar-menu">
     <div className="navbar-start" />
     <div className="navbar-end">
@@ -41,7 +50,8 @@ const renderMenu = () => (
       <div className="navbar-item" href="https://bulma.io/">
         <Button
           text="Keep In Touch"
-          raised
+          raised={!isTransparent}
+          isWhite={isTransparent}
           hasShadow
         />
       </div>
@@ -49,16 +59,17 @@ const renderMenu = () => (
   </div>
 )
 
-const Header = () => (
-  <nav className={navClassNames} role="navigation" aria-label="main-navigation">
+const Header = ({ isTransparent }) => (
+  <nav className={getClassNames(isTransparent)} role="navigation" aria-label="main-navigation">
     <div className="container">
       <div className="navbar-brand">
-        <a className="navbar-item">
-          <img src={logo} className="logo" alt="Animation Guild at UT Dallas" />
-        </a>
+        <Link className="navbar-item logo-container" to="/">
+          <img src={whiteLogo} className="logo white-logo" alt="Animation Guild at UT Dallas" />
+          <img src={logo} className="logo colored-logo" alt="Animation Guild at UT Dallas" />
+        </Link>
         {renderMobileMenu()}
       </div>
-      {renderMenu()}
+      {renderMenu(isTransparent)}
     </div>
   </nav>
 );
