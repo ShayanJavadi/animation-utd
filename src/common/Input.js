@@ -18,7 +18,7 @@ export default props => (
   <div className="input-container">
     {
       props.isTextArea
-        ? <textarea className={textAreaClasses} name="" id="" cols="30" rows="10" />
+        ? <textarea className={textAreaClasses} name="" id="" cols="30" rows="10" {...props} />
         : <input className={inputClasses} {...props} />
     }
   </div>
