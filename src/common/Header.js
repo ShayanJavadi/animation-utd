@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import classNames from "classnames";
 import logo from "../../assets/images/logo-text.png";
 import whiteLogo from "../../assets/images/logo-text-white.png";
-import Button from "../common/Button";
+import Button from "./Button";
 import {
   HOME_PAGE_ROUTE,
   EVENTS_PAGE_ROUTE,
@@ -57,7 +57,7 @@ const renderMenu = isTransparent => (
       </div>
     </div>
   </div>
-)
+);
 
 const Header = ({ isTransparent }) => (
   <nav className={getClassNames(isTransparent)} role="navigation" aria-label="main-navigation">

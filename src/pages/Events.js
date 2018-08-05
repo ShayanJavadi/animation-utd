@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import Header from "../common/Header";
+import MailingListSection from "../components/MailingListSection";
 import Events from "../components/EventsPageEventsSection";
 import Footer from "../common/Footer";
 
@@ -8,6 +9,7 @@ const EventsPage = ({ data }) => (
   <div>
     <Header />
     <Events events={data.allMarkdownRemark.edges} />
+    <MailingListSection />
     <Footer />
   </div>
 );

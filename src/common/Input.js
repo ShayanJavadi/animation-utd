@@ -3,14 +3,23 @@ import classNames from "classnames";
 
 const PACKAGE_NAME = "input-component";
 
-const classes = classNames(
+const inputClasses = classNames(
   PACKAGE_NAME,
   "input",
   "is-rounded",
 );
 
-export default ({ placeholder, type, className }) => (
+const textAreaClasses = classNames(
+  PACKAGE_NAME,
+  "textarea",
+);
+
+export default props => (
   <div className="input-container">
-    <input className={classes} type="text" placeholder={placeholder} />
+    {
+      props.isTextArea
+        ? <textarea className={textAreaClasses} name="" id="" cols="30" rows="10" />
+        : <input className={inputClasses} {...props} />
+    }
   </div>
 );

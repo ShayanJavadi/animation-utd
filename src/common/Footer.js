@@ -10,9 +10,8 @@ const Footer = () => {
   );
 
   return (
-    <footer className={classes}>
-    </footer>
+    <footer className={classes} />
   );
-}
+};
 
 export default Footer;

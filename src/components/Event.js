@@ -5,9 +5,12 @@ import Button from "../common/Button";
 const PACKAGE_NAME = "event-component";
 
 const Event = ({ event }) => {
-  const { html, frontmatter: { title, date, location, time, imageUrl, eventUrl }} = event;
-  console.log(eventUrl);
-  
+  const {
+    html, frontmatter: {
+      title, date, location, time, imageUrl, eventUrl,
+    },
+  } = event;
+
 
   return (
     <div className="container event-component">
@@ -15,9 +18,15 @@ const Event = ({ event }) => {
         <img src={imageUrl} alt="" />
       </div>
       <div className="event-content container content">
-        <h2>{title}</h2>
-        <h3>{`${date}, ${location}`}</h3>
-        <h3>{time}</h3>
+        <h2>
+          {title}
+        </h2>
+        <h3>
+          {`${date}, ${location}`}
+        </h3>
+        <h3>
+          {time}
+        </h3>
         <HTMLContent html={html} classNames="content" />
         <div className="learn-more-button-container">
           <Button text="Learn More" href={eventUrl} />

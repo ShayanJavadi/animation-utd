@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "gatsby-link";
 import classNames from "classnames";
-import logo from "../../assets/images/logo-text.png";
 import DownArrow from "react-icons/lib/fa/sort-desc";
+import logo from "../../assets/images/logo-text.png";
 
 const PACKAGE_NAME = "button-component";
 const RAISED_BUTTON_CLASS = "is-raised";
@@ -12,12 +12,26 @@ const HAS_DARK_SHADOW_CLASS = "dark-shadow";
 const SECONDARY_BUTTON_CLASS = "button-secondary";
 const WHITE_BUTTON_CLASS = "button-white";
 
-const renderDownArrow = () => <span className="down-arrow"><DownArrow /></span>;
+const renderDownArrow = () => (
+  <span className="down-arrow">
+    <DownArrow />
+  </span>
+);
 
-const Button = ({
-  raised, text, href, onPress, icon, hasShadow, hasDarkShadow, isSecondary, className, isWhite, hasDownArrow
-}) => {
-
+const Button = (props) => {
+  const {
+    raised,
+    text,
+    href,
+    onPress,
+    icon,
+    hasShadow,
+    hasDarkShadow,
+    isSecondary,
+    className,
+    isWhite,
+    hasDownArrow,
+  } = props;
   const classes = classNames(
     PACKAGE_NAME,
     `${raised ? RAISED_BUTTON_CLASS : GHOST_BUTTON_CLASS}`,
@@ -30,10 +44,10 @@ const Button = ({
 
   return (
     <div className="button-container">
-      <a href={href} onClick={onPress} className={classes} target="_blank" rel="noopener noreferrer">
+      <button {...props} href={href} onClick={onPress} className={classes} target="_blank" rel="noopener noreferrer">
         {text}
         {hasDownArrow && renderDownArrow()}
-      </a>
+      </button>
     </div>
   );
 };

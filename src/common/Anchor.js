@@ -6,7 +6,9 @@ const ANCHOR_SECONDARY_CLASS_NAME = "is-secondary";
 const ANCHOR_UNDERLINED_CLASS_NAME = "is-underlined";
 const ANCHOR_UNDERLINED_SECONDARY_CLASS_NAME = "is-underlined-secondary";
 
-const Anchor = ({ href, className, text, isSecondary, isUnderlined, isUnderlinedSecondary }) => {
+const Anchor = ({
+  href, className, text, isSecondary, isUnderlined, isUnderlinedSecondary,
+}) => {
   const classes = classNames(
     PACKAGE_NAME,
     isSecondary && ANCHOR_SECONDARY_CLASS_NAME,

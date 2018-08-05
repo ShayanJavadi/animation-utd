@@ -1,0 +1,48 @@
+.officer-section-component {
+  .officer-image {
+    border-radius: 50%;
+    box-shadow: $shadow-dark;
+  }
+
+  .officer-information {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    .position {
+      color: $primary;
+      font-size: 24px;
+      margin-top: 8px;
+    }
+
+    .name {
+      color: $secondary;
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .officer-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 35%;
+      font-size: 20px;
+      margin-top: 5px;
+      
+      a {
+        color: $primary;
+        opacity: 1;
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+    
+    p {
+      margin: 0;
+    }
+  }
+}

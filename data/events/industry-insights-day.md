@@ -9,9 +9,4 @@ eventUrl: "https://www.facebook.com/events/126906931494002/"
 🙌 IT'S ALMOST HERE! Come join us and our guests from studios Brazen Animation, Explosm, GearBox, Groove Jones, and Rooster Teeth at Industry Insights Day ☆ 
 FREE PIZZA and DRINKS 🍕🍕🍕
 
-
-
-
-
-
 LIMITED SEATS AVAILABLE!

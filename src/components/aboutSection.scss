@@ -1,0 +1,27 @@
+.about-section {
+  background: $secondary;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: url(../../assets/images/hero-image.png) no-repeat center top;
+  background-size: cover !important;
+
+
+  .section-header-component {
+    div {
+     height: auto;
+    }
+
+    h1 {
+      padding-bottom: 20px;
+      color: #fff;
+    }
+
+    p {
+      padding: 0 10%;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}

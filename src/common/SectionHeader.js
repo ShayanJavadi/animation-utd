@@ -9,7 +9,9 @@ const PACKAGE_NAME = "section-header-component";
 const DEFAULT_TITLE_CLASSNAME = "title";
 const SECONDARY_TITLE_CLASSNAME = "title-secondary";
 
-const SectionHeader = ({ children, text, isSecondary, className }) => {
+const SectionHeader = ({
+  children, text, isSecondary, className,
+}) => {
   const componentClasses = classNames(
     PACKAGE_NAME,
     className,

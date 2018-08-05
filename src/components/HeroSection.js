@@ -20,31 +20,29 @@ const onLearnMorePress = () => {
   });
 };
 
-const HeroSection = ({ backgroundUrl}) => {
-  return (
-    <section className={heroSectionClassNames}>
-      <div className="text-container hero-body container">
-        <h3>
+const HeroSection = ({ backgroundUrl }) => (
+  <section className={heroSectionClassNames}>
+    <div className="text-container hero-body container">
+      <h3>
           Welcome to
-        </h3>
-        <h1 className={bigFontClassNames}>
+      </h3>
+      <h1 className={bigFontClassNames}>
           Animation Guild
-        </h1>
-        <h3>
+      </h1>
+      <h3>
           at University of Texas at Dallas
-        </h3>
-        <div className="button-container">
-          <Button
-            text="Learn More"
-            isWhite
-            hasDarkShadow
-            hasDownArrow
-            onPress={onLearnMorePress}
-          />
-        </div>
+      </h3>
+      <div className="button-container">
+        <Button
+          text="Learn More"
+          isWhite
+          hasDarkShadow
+          hasDownArrow
+          onPress={onLearnMorePress}
+        />
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default HeroSection;
