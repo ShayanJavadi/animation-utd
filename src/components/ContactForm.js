@@ -9,7 +9,8 @@ const ContactForm = () => (
   <section className={PACKAGE_NAME}>
     <SectionHeader text="Lorem Ipsum Kitty Pasta" />
     <div className="container">
-      <form name="contact" method="POST" netlify>
+      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>Your Name: <input type="text" name="name" /></label>
         </p>
