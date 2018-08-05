@@ -9,23 +9,23 @@ const ContactForm = () => (
   <section className={PACKAGE_NAME}>
     <SectionHeader text="Lorem Ipsum Kitty Pasta" />
     <div className="container">
-      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form action="/success" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
         <Input type="hidden" name="bot-field" />
         <div className="field half first">
           <label htmlFor="name">
-Name*
+            Name*
           </label>
           <Input type="text" name="name" id="name" placeholder="Your Name" />
         </div>
         <div className="field half">
           <label htmlFor="email">
-Email*
+            Email*
           </label>
           <Input type="text" name="email" id="email" placeholder="example@domain.com" />
         </div>
         <div className="field">
           <label htmlFor="message">
-Message*
+            Message*
           </label>
           <Input name="message" id="message" rows="6" isTextArea />
         </div>
