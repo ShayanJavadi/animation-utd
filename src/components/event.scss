@@ -3,6 +3,36 @@
   flex-direction: row;
   flex: 1;
   margin-top: 100px;
+  box-shadow: $shadow-blurry;
+  padding: 2rem 3.2rem 4rem 2rem;
+  padding-bottom: 31px;
+  border-radius: .6rem;
+
+  .event-date-container {
+    flex: .2;
+    flex-direction: column;
+    justify-content:  center;
+    align-items:  center;
+    text-align: center;
+    border-top: 2px solid $tertiary;
+
+    p {
+      margin: 0;
+      color: #9999;
+
+    }
+
+    .event-month {
+      padding-top: 3px;
+      font-size: 12px;
+    }
+
+    .event-day {
+      font-size: 20px;
+      line-height: 14px;
+    }
+
+  }
 
   .event-image {
     display: flex;
@@ -12,6 +42,7 @@
     img {
       height: auto;
       width: 100%;
+      border-top-left-radius: .6rem;
     }
   }
 
@@ -25,10 +56,12 @@
 
     h2 {
       color: $primary;
+      padding-right: 5%;
     }
 
     h3 {
       color: $secondary;
+      padding-right: 5%;
     }
 
     h2, h3 {

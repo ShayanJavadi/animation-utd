@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { take } from "lodash";
 import { Element } from "react-scroll";
 import Waypoint from "react-waypoint";
+import moment from "moment";
 import HeroSection from "../components/HeroSection";
 import Header from "../common/Header";
 import MissionStatementSection from "../components/MissionStatementSection";
@@ -11,6 +12,7 @@ import MailingListSection from "../components/MailingListSection";
 import Footer from "../common/Footer";
 import scrollRoutes from "../common/consts/scroll-routes";
 import { NAV_BAR_HEIGHT } from "../common/consts/dimensions";
+import isTodayOrInTheFuturePredicate from "../lib/isTodayOrInTheFuturePredicate";
 
 const { EVENTS_SECTION_SCROLL_ROUTE } = scrollRoutes;
 
@@ -33,7 +35,8 @@ class IndexPage extends Component {
 
   render() {
     const { data } = this.props;
-    const events = take(data.allMarkdownRemark.edges, 2);
+
+    const events = data.allMarkdownRemark.edges.filter(isTodayOrInTheFuturePredicate);
 
     return (
       <div>
@@ -56,7 +59,7 @@ export default IndexPage;
 export const query = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { order: ASC, fields: [frontmatter___date] }
       filter: { fileAbsolutePath: { regex: "/(\/data\/events)/.*\\.md$/" } }
       ) {
       edges {
@@ -65,7 +68,7 @@ export const query = graphql`
           html
           frontmatter {
             title
-            date(formatString: "dddd, MMMM DD")
+            date
             location
             time
             imageUrl

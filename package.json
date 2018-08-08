@@ -26,12 +26,14 @@
     "gatsby-transformer-remark": "^1.7.44",
     "gatsby-transformer-sharp": "^1.6.27",
     "lodash": "^4.17.10",
+    "moment": "^2.22.2",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
     "react-mailchimp-subscribe": "^2.0.2",
     "react-scroll": "^1.7.10",
     "react-waypoint": "^8.0.3",
-    "rimp": "^0.1.5"
+    "rimp": "^0.1.5",
+    "rodal": "^1.6.3"
   },
   "keywords": [
     "gatsby"

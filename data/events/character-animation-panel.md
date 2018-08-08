@@ -1,6 +1,6 @@
 ---
 title: "Character Animation Panel"
-date: "2017-04-04"
+date: "2018-09-07"
 location: "SU GALAXY ROOM (2.602)"
 time: "10 a.m. - 12 p.m."
 imageUrl: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/31530862_2203448953215982_8596250882574647296_n.jpg?_nc_cat=0&oh=0a57e950e86bd2a2fb4b058c25ce06f8&oe=5BDBC3DF"
