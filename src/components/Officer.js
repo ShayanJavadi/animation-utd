@@ -7,29 +7,26 @@ const PACKAGE_NAME = "officer-section-component";
 
 const Officer = ({
   firstName, lastName, position, linkedin, website, image,
-}) => {
-
-  return (
-    <section className={PACKAGE_NAME}>
-      <img src={image} className="officer-image" />
-      <div className="officer-information">
-        <p className="position">
-          {capitalize(position)}
-        </p>
-        <p className="name">
-          {`${capitalize(firstName)} ${capitalize(lastName)}`}
-        </p>
-        <div className="officer-links">
-          <a className="linkedin-icon" href={linkedin} target="_blank" rel="noopener noreferrer">
-            <LinkedinIcon />
-          </a>
-          <a className="website-icon" href={website} target="_blank" rel="noopener noreferrer">
-            <WebsiteIcon />
-          </a>
-        </div>
+}) => (
+  <section className={PACKAGE_NAME}>
+    <img src={image} className="officer-image" />
+    <div className="officer-information">
+      <p className="position">
+        {capitalize(position)}
+      </p>
+      <p className="name">
+        {`${capitalize(firstName)} ${capitalize(lastName)}`}
+      </p>
+      <div className="officer-links">
+        <a className="linkedin-icon" href={linkedin} target="_blank" rel="noopener noreferrer">
+          <LinkedinIcon />
+        </a>
+        <a className="website-icon" href={website} target="_blank" rel="noopener noreferrer">
+          <WebsiteIcon />
+        </a>
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default Officer;

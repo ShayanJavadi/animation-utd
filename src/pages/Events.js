@@ -10,9 +10,9 @@ import isTodayOrInTheFuturePredicate from "../lib/isTodayOrInTheFuturePredicate"
 const getEvents = (edges) => {
   const upcomingEvents = reverse(edges.filter(isTodayOrInTheFuturePredicate));
   const pastEvents = difference(edges, upcomingEvents);
-  
+
   return [...upcomingEvents, ...pastEvents];
-}
+};
 
 const EventsPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
@@ -24,7 +24,7 @@ const EventsPage = ({ data }) => {
       <MailingListSection />
       <Footer />
     </div>
-  )
+  );
 };
 
 export default EventsPage;

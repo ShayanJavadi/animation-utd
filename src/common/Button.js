@@ -11,6 +11,8 @@ const HAS_SHADOW_CLASS = "has-shadow";
 const HAS_DARK_SHADOW_CLASS = "dark-shadow";
 const SECONDARY_BUTTON_CLASS = "button-secondary";
 const WHITE_BUTTON_CLASS = "button-white";
+const DISABLED_BUTTON_CLASS = "disabled-button";
+const TERTIARY_BUTTON_CLASS = "is-tertiary";
 
 const renderDownArrow = () => (
   <span className="down-arrow">
@@ -31,6 +33,8 @@ const Button = (props) => {
     className,
     isWhite,
     hasDownArrow,
+    isTertiary,
+    disabled,
   } = props;
   const classes = classNames(
     PACKAGE_NAME,
@@ -39,6 +43,8 @@ const Button = (props) => {
     hasDarkShadow && HAS_DARK_SHADOW_CLASS,
     isSecondary && SECONDARY_BUTTON_CLASS,
     isWhite && WHITE_BUTTON_CLASS,
+    disabled && DISABLED_BUTTON_CLASS,
+    isTertiary && TERTIARY_BUTTON_CLASS,
     className,
   );
 

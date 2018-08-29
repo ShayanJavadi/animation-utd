@@ -11,6 +11,13 @@
 
     .officer-section-component {
       width: 33%;
+      @media screen and (max-width: 920px) {
+        width: 50%;
+      }
+
+      @media screen and (max-width: 650px) {
+        width: 100%;
+      }
       display: flex;
       justify-content: center;
       align-items: center;

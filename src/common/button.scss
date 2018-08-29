@@ -17,6 +17,11 @@
     opacity: 0.7;
   }
 
+  &.disabled-button {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+
   .down-arrow {
     position: relative;
     left: 5px;
@@ -48,6 +53,11 @@
 
   &:hover {
     color: #fff;
+  }
+
+  &.is-tertiary {
+    background-color: $tertiary;
+    border: $tertiary 2px solid;
   }
 }
 

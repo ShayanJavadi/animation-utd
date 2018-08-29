@@ -3,6 +3,7 @@
   box-shadow: $shadow;
   background-color: #fff;
   transition: all 0.2s;
+
   z-index: 99999;
   justify-content: center;
   align-items: center;
@@ -12,8 +13,60 @@
     height: 70px;
   }
 
+  .rodal-dialog {
+    width: 35% !important;
+    height: 45% !important;
+    @media screen and (max-width: $desktop) {
+      width: 35% * 1.5 !important;  
+      height: 45% * 1.1 !important;
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: 35% * 1.8 !important;  
+    }
+
+    @media screen and (max-width: 580px) {
+      width: 35% * 2 !important;  
+    }
+
+    @media screen and (max-width: 490px) {
+      width: 35% * 2.5 !important;  
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 95% !important;  
+    }
+  }
+
+
+  &.is-navbar-menu-active {
+    transition: none;
+
+    .navbar-brand {
+      position: relative;
+      top: 116px;
+    }
+
+    .navbar-menu {
+      position: relative;
+      top: 126px;
+    }
+   
+    .navbar-item {
+      text-align: center;
+
+      .button-component {
+        margin-left: 0px;
+
+        @media screen and (max-width: $desktop) {
+          width: 80%;
+        }
+      }
+    }
+  }
+
   .navbar-brand {
-    margin: 0 15px;
+    margin: 0 15px;    
   }
 
   .navbar-burger {
@@ -86,6 +139,14 @@
       a:hover, a.is-active {
         background-color: inherit;
         color: inherit;
+      }
+    }
+
+    .button-container {
+      @media screen and (max-width: $desktop) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   } 

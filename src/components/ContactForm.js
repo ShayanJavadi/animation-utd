@@ -7,7 +7,7 @@ const PACKAGE_NAME = "contact-form-component";
 
 const ContactForm = () => (
   <section className={PACKAGE_NAME}>
-    <SectionHeader text="Lorem Ipsum Kitty Pasta" />
+    <SectionHeader text="Keep In Touch" />
     <div className="container">
       <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact" />

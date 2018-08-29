@@ -5,6 +5,10 @@
   margin-top: 100px;
   box-shadow: $shadow-blurry;
   padding: 2rem 3.2rem 4rem 2rem;
+  @media screen and (max-width: 1030px) {
+    padding: 2rem 2.2rem 4rem 2rem;
+  }   
+
   padding-bottom: 31px;
   border-radius: .6rem;
 
@@ -38,6 +42,9 @@
     display: flex;
     flex: 3;
     padding: 0;
+    @media screen and (max-width: 930px) {
+      display: none;
+    }   
 
     img {
       height: auto;
@@ -52,6 +59,9 @@
 
     .content {
       padding-right: 20%;
+      @media screen and (max-width: 930px) {
+        padding-right: 1%;
+      }  
     }
 
     h2 {

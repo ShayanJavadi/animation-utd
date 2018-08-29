@@ -14,55 +14,58 @@ import {
 
 // TODO remove this
 import "rodal/lib/rodal.css";
-
-
+import MailingListSection from "../components/MailingListSection";
 
 const PACKAGE_NAME = "header-component";
 const TRANSPARENT_NAV_BAR_CLASS = "is-transparent";
 
 
 class Header extends Component {
-  // handleMobileNavClick = () => {
-  //   console.log("asdasds");
-  //   const menu = document.querySelector(".navbar-burger");
+  handleMobileNavClick = () => {
+    const menu = document.querySelector(".navbar-burger");
 
-  //   if (menu) {
-  //     menu.addEventListener("click", () => {
-  //       this.toggleMobileMenu(menu);
-  //     });
-  //   }
-  // }
+    if (menu) {
+      menu.addEventListener("click", () => {
+        this.setState({ isDropDownOpen: !this.state.isDropDownOpen }, () => this.toggleMobileMenu(menu));
+      });
+    }
+  }
 
-  // toggleMobileMenu(menu) {
-  //   const target = document.getElementById(menu.dataset.target);
+  toggleMobileMenu(menu) {
+    const target = document.getElementById(menu.dataset.target);
 
-  //   menu.classList.toggle("is-active");
-  //   target.classList.toggle("is-active");
-  // }
+    menu.classList.toggle("is-active");
+    target.classList.toggle("is-active");
+  }
 
-  // componentDidMount() {
-  //   console.log("ASdasd");
-  //   this.handleMobileNavClick();
-  // }
+  componentDidMount() {
+    console.log("ASdasd");
+    this.handleMobileNavClick();
+  }
 
-  // componentWillUnmount() {
-  //   menu.removeEventListener("click", () => {
-  //     this.toggleMobileMenu(menu);
-  //   });
-  // }
+  componentWillUnmount() {
+    const menu = document.querySelector(".navbar-burger");
+
+    menu.removeEventListener("click", () => {
+      this.setState({ isDropDownOpen: !this.state.isDropDownOpen }, () => this.toggleMobileMenu(menu));
+    });
+  }
 
   state = {
-    isModalVisible: false
+    isModalVisible: false,
+    isDropDownOpen: false,
   }
   
 
   getClassNames = (isTransparent) => {
+    console.log(isTransparent && !this.state.isDropDownOpen && TRANSPARENT_NAV_BAR_CLASS);
     return (
       classNames(
         PACKAGE_NAME,
         "navbar",
         "is-fixed-top",
-        isTransparent && TRANSPARENT_NAV_BAR_CLASS,
+        isTransparent && !this.state.isDropDownOpen && TRANSPARENT_NAV_BAR_CLASS,
+        this.state.isDropDownOpen && "is-navbar-menu-active",
       )
     );
   }
@@ -100,9 +103,10 @@ class Header extends Component {
           <div className="navbar-item" href="https://bulma.io/">
             <Button
               text="Keep In Touch"
-              raised={!isTransparent}
-              isWhite={isTransparent}
+              raised={!isTransparent || this.state.isDropDownOpen}
+              isWhite={isTransparent && !this.state.isDropDownOpen}
               hasShadow
+              isTertiary
               onPress={() => this.setState({ isModalVisible: true })}
             />
           </div>
@@ -114,16 +118,13 @@ class Header extends Component {
   renderModal = () => {
     return (
       <Rodal visible={this.state.isModalVisible} onClose={() => this.setState({ isModalVisible: false })}>
-        <div>I've started using Shrek as a unit of time, where 1 shrek = 1hr 35min (the length of the movie)
-
-Examples: "See you in a shrek!" (1hr 35min) "Dinner will be ready in half a shrek." (47.5min)
-
-"My birthday is only 469.9 shreks away!" (1 month)</div>
+        <MailingListSection isInModal />
       </Rodal>
     )
   }
 
   render() {
+    console.log(this.state);
     const { isTransparent } = this.props;
 
     return (

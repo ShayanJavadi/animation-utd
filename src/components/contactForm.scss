@@ -4,7 +4,14 @@
 
   form {
     padding: 0 30%;
-    
+    @media screen and (max-width: 920px) {
+      padding: 0 25%;
+    }
+
+    @media screen and (max-width: 625px) {
+       padding: 0 10%;
+    }
+
     label {
       color: $primary;
     }
@@ -21,7 +28,10 @@
     }
 
     button {
-      width: 30%
+      width: 30%;
+      @media screen and (max-width: 625px) {
+        width: 100%;
+      }
     }
   }
 }

@@ -19,17 +19,37 @@
     }
 
     h1.huge-font {
-      text-shadow: $shadow-dark;
       font-size: 500%;
       color: #fff;
       margin: 0;
+      @media screen and (max-width: 920px) {
+        font-size: 400%;
+      }
+
+      @media screen and (max-width: 625px) {
+        font-size: 300%;
+      }
+
+      @media screen and (max-width: 625px) {
+        font-size: 280%;
+      }
     }
 
     h3 {
-      text-shadow: $shadow-dark;
       font-size: 180%;
       color: #fff;
       margin: 0;
+      @media screen and (max-width: 920px) {
+        font-size: 170%;
+      }
+
+      @media screen and (max-width: 625px) {
+        font-size: 160%;
+      }
+
+      @media screen and (max-width: 625px) {
+        font-size: 150%;
+      }
     }
   }
 
