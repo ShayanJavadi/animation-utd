@@ -18,12 +18,23 @@ const Officer = ({
         {`${capitalize(firstName)} ${capitalize(lastName)}`}
       </p>
       <div className="officer-links">
-        <a className="linkedin-icon" href={linkedin} target="_blank" rel="noopener noreferrer">
-          <LinkedinIcon />
-        </a>
-        <a className="website-icon" href={website} target="_blank" rel="noopener noreferrer">
-          <WebsiteIcon />
-        </a>
+        {
+          linkedin
+          && (
+            <a className="linkedin-icon" href={linkedin} target="_blank" rel="noopener noreferrer">
+              <LinkedinIcon />
+            </a>
+          )
+        }
+        
+        {
+          website
+          && (
+            <a className="website-icon" href={website} target="_blank" rel="noopener noreferrer">
+              <WebsiteIcon />
+            </a>
+          )
+        }
       </div>
     </div>
   </section>

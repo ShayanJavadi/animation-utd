@@ -2,6 +2,5 @@
 firstName: "autumn"
 lastName: "jennings"
 position: "designer"
-linkedin: "https://www.linkedin.com/in/shayan-javadi/"
-website: "https://www.shayanjavadi.com/"
+linkedin: "https://www.linkedin.com/in/autumn-jennings-0343b9129"
 ---
