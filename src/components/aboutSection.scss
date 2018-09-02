@@ -14,14 +14,20 @@
     }
 
     h1 {
-      padding-bottom: 20px;
+      padding-bottom: 5px;
       color: #fff;
     }
 
     p {
-      padding: 0 10%;
+      padding: 0 6%;
       text-align: center;
       color: #fff;
+      @media screen and (max-width: 625px) {
+        font-size: 13px;
+      }
+      @media screen and (max-width: 325px) {
+        font-size: 12px;
+      }
     }
   }
 }
