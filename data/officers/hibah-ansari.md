@@ -2,5 +2,5 @@
 firstName: "hibah"
 lastName: "ansari"
 position: "treasurer"
-linkedin: "www.linkedin.com/in/hibah-ansari-000"
+linkedin: "https://www.linkedin.com/in/hibah-ansari-3b550416b/"
 ---
