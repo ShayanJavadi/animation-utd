@@ -10,7 +10,7 @@ const Footer = () => {
   );
 
   return (
-    <footer className={classes} />
+    <div className="oof"><p>Oof</p><footer className={classes} /></div>
   );
 };
 

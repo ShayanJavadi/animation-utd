@@ -2,6 +2,12 @@
   background-color: $secondary-dark;
   height: 80px;
   padding: 0px;
+}
 
-
+.oof {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  background: $secondary-dark
 }
