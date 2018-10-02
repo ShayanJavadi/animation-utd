@@ -10,7 +10,7 @@ const Footer = () => {
   );
 
   return (
-    <div className="oof"><p>Oof</p><footer className={classes} /></div>
+    <div className="oof"><p>Oof🎃💀</p><footer className={classes} /></div>
   );
 };
 
