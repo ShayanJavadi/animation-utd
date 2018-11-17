@@ -17,7 +17,7 @@
     "eslint-plugin-react": "^7.10.0",
     "gatsby": "^1.9.273",
     "gatsby-image": "^1.0.55",
-    "gatsby-link": "^1.6.40",
+    "gatsby-link": "^2.0.6",
     "gatsby-plugin-mailchimp": "^2.2.3",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-sass": "^1.0.26",
