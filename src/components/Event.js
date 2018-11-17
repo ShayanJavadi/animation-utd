@@ -29,7 +29,8 @@ const renderEventDetails = (event) => {
         {title}
       </h2>
       <h3>
-        {`${formattedDate}, ${location}`}
+        {`${formattedDate}`}
+        {location && `, ${location}`}
       </h3>
       <h3>
         {time}

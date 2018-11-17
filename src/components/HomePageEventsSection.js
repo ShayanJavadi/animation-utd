@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "gatsby-link";
 import SectionHeader from "../common/SectionHeader";
 import Event from "./Event";
 import Button from "../common/Button";
@@ -17,7 +18,9 @@ const HomePageEventsSection = ({ events }) => (
         {renderEvents(events)}
       </div>
       <SectionHeader className={BIG_SECTION_HEADER_CLASS_NAME} text="More Events Coming Soon!" isSecondary>
-        <Button text="View Our Past Events" isSecondary />
+        <Link to={"Events"}>
+          <Button text="View Our Past Events" isSecondary />
+        </Link>
       </SectionHeader>
     </div>
   </section>
