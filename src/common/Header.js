@@ -39,7 +39,6 @@ class Header extends Component {
   }
 
   componentDidMount() {
-    console.log("ASdasd");
     this.handleMobileNavClick();
   }
 
@@ -58,7 +57,6 @@ class Header extends Component {
   
 
   getClassNames = (isTransparent) => {
-    console.log(isTransparent && !this.state.isDropDownOpen && TRANSPARENT_NAV_BAR_CLASS);
     return (
       classNames(
         PACKAGE_NAME,
@@ -124,7 +122,6 @@ class Header extends Component {
   }
 
   render() {
-    console.log(this.state);
     const { isTransparent } = this.props;
 
     return (

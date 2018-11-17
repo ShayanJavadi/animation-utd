@@ -23,7 +23,6 @@ const renderEventDetails = (event) => {
   } = event;
 
   const formattedDate = moment(date).format(EVENT_TITLE_DATE_FORMAT);
-  console.log(eventUrl);
   return (
     <div className="event-content container content">
       <h2>

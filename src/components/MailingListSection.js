@@ -89,7 +89,6 @@ class MailingListSection extends Component {
   }
 
   render() {
-    console.log(this.state);
     if (this.props.isInModal) {
       return this.renderContent();
     }
