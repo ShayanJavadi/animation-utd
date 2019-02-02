@@ -10,7 +10,7 @@ const Footer = () => {
   );
 
   return (
-    <div className="oof"><p>Oof🎃💀</p><footer className={classes} /></div>
+    <div className="footer"><p>Made with ❤ by the Animation Guild Officers</p><footer className={classes} /></div>
   );
 };
 
