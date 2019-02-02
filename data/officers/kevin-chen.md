@@ -1,6 +1,6 @@
 ---
 firstName: "kevin"
 lastName: "chen"
-position: "secretary"
+position: "webmaster"
 linkedin: "https://www.linkedin.com/in/nich227/"
 ---
