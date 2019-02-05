@@ -3,7 +3,7 @@ title: "Blue Sky Call"
 date: "2019-02-15"
 location: "ATC 1.305"
 time: "2:00 p.m. - 3:00 p.m."
-imageUrl: "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/51161275_535190490222917_1131620180510638080_o.jpg?_nc_cat=109&_nc_ht=scontent-dfw5-2.xx&oh=129be140228cc8526dfe868dd83b78aa&oe=5CFD926C"
+imageUrl: "https://raw.githubusercontent.com/ShayanJavadi/animation-utd/master/assets/images/events/BlueSkyCall(3840x2160).png"
 eventUrl: "https://www.facebook.com/events/373862600099139/"
 ---
 The Animation Guild would like to invite all ATEC students, faculty, and staff to attend a special presentation and Q & A session by BLUE SKY Recruiter, Mindy Berardini on Friday, February 15!
