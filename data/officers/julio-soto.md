@@ -1,6 +1,6 @@
 ---
 firstName: "julio"
 lastName: "soto"
-position: "Social Media Coordinator"
+position: "Marketing Coordinator"
 linkedin: "https://www.linkedin.com/in/juliocsoto"
 ---
