@@ -87,7 +87,6 @@ export const pageQuery = graphql`
             lastName
             position
             linkedin
-            website
             order
           }
         }
