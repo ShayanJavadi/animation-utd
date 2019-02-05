@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import classNames from "classnames";
 
 const PACKAGE_NAME = "footer-component";
@@ -10,7 +10,7 @@ const Footer = () => {
   );
 
   return (
-    <div className="footer"><p>Made with ❤ by the Animation Guild Officers</p><footer className={classes} /></div>
+    <div className="footer"><p>Oof</p><footer className={classes} /></div>
   );
 };
 
