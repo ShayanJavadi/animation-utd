@@ -1,5 +1,11 @@
-website repo for animation guild at utd 
+# Animation Guild at UT Dallas Website
+Official website for the Animation Guild at UT Dallas.
 
+## Social
+Facebook:
 https://www.facebook.com/animationutd/
+Instagram:
+https://www.instagram.com/utdallas_ag/
 
-http://animationutd.com/
+## Link
+https://animationutd.com/
