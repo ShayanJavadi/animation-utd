@@ -7,3 +7,4 @@ imageUrl: "https://cdn.discordapp.com/attachments/436647385347915786/48412297131
 eventUrl: "https://cdn.discordapp.com/attachments/436647385347915786/484122971317862445/placeholder.jpg"
 ---
 Details coming soon
+Date is March TBA
