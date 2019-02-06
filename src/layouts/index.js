@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import { Element } from "react-scroll";
 import scrollRoutes from "../common/consts/scroll-routes";
 import "./index.scss";
-import favicon from 'https://raw.githubusercontent.com/ShayanJavadi/animation-utd/master/assets/images/favicon.ico';
+import favicon from "https://raw.githubusercontent.com/ShayanJavadi/animation-utd/master/assets/images/favicon.ico";
 
 const { TOP_OF_THE_PAGE_ROUTE } = scrollRoutes;
 
