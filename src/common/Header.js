@@ -125,7 +125,6 @@ class Header extends Component {
     const { isTransparent } = this.props;
 
     return (
-      <link rel="shortcut icon" type="image/ico" href="https://raw.githubusercontent.com/ShayanJavadi/animation-utd/master/assets/images/favicon.ico" />
       <nav className={this.getClassNames(isTransparent)} role="navigation" aria-label="main-navigation">
         <div className="container">
           <div className="navbar-brand">
