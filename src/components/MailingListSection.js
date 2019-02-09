@@ -4,6 +4,7 @@ import addToMailchimp from "gatsby-plugin-mailchimp";
 import classNames from "classnames";
 import FacebookIcon from "react-icons/lib/fa/facebook-square";
 import MailIcon from "react-icons/lib/fa/envelope";
+import InstagramIcon from "react-icons/lib/fa/instagram"
 import SectionHeader from "../common/SectionHeader";
 import Button from "../common/Button";
 import Input from "../common/Input";
@@ -80,6 +81,9 @@ class MailingListSection extends Component {
             </a>
             <a href="mailto:utdanimationguild@gmail.com" target="_blank" rel="noopener noreferrer">
               <MailIcon />
+            </a>
+            <a href="https://www.instagram.com/utdallas_ag/" target="_blank" rel="noopener noreferrer">
+              <InstagramIcon /> 
             </a>
           </Row> :
           <Row className="links-row" /> 
