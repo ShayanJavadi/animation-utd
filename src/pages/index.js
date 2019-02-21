@@ -3,7 +3,6 @@ import { take } from "lodash";
 import { Element } from "react-scroll";
 import Waypoint from "react-waypoint";
 import moment from "moment";
-import { Helmet } from "react-helmet";
 import HeroSection from "../components/HeroSection";
 import Header from "../common/Header";
 import MissionStatementSection from "../components/MissionStatementSection";
@@ -14,7 +13,6 @@ import Footer from "../common/Footer";
 import scrollRoutes from "../common/consts/scroll-routes";
 import { NAV_BAR_HEIGHT } from "../common/consts/dimensions";
 import isTodayOrInTheFuturePredicate from "../lib/isTodayOrInTheFuturePredicate";
-import favicon from 'https://raw.githubusercontent.com/ShayanJavadi/animation-utd/master/assets/images/favicon.ico';
 
 const { EVENTS_SECTION_SCROLL_ROUTE } = scrollRoutes;
 
@@ -51,14 +49,6 @@ class IndexPage extends Component {
         <MissionStatementSection />
         <MailingListSection />
         <Footer />
-
-        <Helmet>
-          <meta name="description" 
-          content="We aim to become an open and collaborative community where members feel inspired to fulfill their creative potential." />
-          link={[
-          { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
-          ]}
-        </Helmet>
       </div>
     );
   }
