@@ -1,6 +1,6 @@
 ---
 title: "Industry Insights"
-date: "2019-01-25"
+date: "2019-03-30"
 location: "ATC Lobby"
 time: "4:00 p.m. - 5:00 p.m."
 imageUrl: "https://raw.githubusercontent.com/ShayanJavadi/animation-utd/master/assets/images/events/industryInsightsSp19(3840x2160).png"
