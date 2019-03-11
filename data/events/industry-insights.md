@@ -2,7 +2,7 @@
 title: "Industry Insights"
 date: "2019-03-30"
 location: "Galaxy Rooms"
-time: "4:00 p.m. - 5:00 p.m."
+time: "10:00 a.m. - 2:30 p.m."
 imageUrl: "https://raw.githubusercontent.com/ShayanJavadi/animation-utd/master/assets/images/events/industryInsightsSp19(3840x2160).png"
 eventUrl: "https://www.facebook.com/events/666565613746616/"
 ---
@@ -20,6 +20,6 @@ LIMITED SEATS AVAILABLE!
 Portfolio sign-up link: http://bit.ly/2ERuP5L
 
 Date: Saturday, March 30
-Time: 9:30 a.m. – 2:30 p.m.
+Time: 10:00 a.m. – 2:30 p.m.
 Location: Galaxy Rooms
 Lunch will be provided.
