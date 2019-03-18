@@ -6,6 +6,7 @@ import moment from "moment";
 import HeroSection from "../components/HeroSection";
 import Header from "../common/Header";
 import MissionStatementSection from "../components/MissionStatementSection";
+import PastSpeakers from "../components/HomePagePastSpeakers";
 import PhotoReelSection from "../components/PhotoReelSection";
 import EventsSection from "../components/HomePageEventsSection";
 import MailingListSection from "../components/MailingListSection";
@@ -45,6 +46,7 @@ class IndexPage extends Component {
         <Element name={EVENTS_SECTION_SCROLL_ROUTE}>
           <EventsSection events={events} />
         </Element>
+        <PastSpeakers />
         <PhotoReelSection />
         <MissionStatementSection />
         <MailingListSection />
