@@ -16,12 +16,6 @@ const EventsPageEventsSection = ({ events }) => (
       <div className="events-container">
         {renderEvents(events)}
       </div>
-      <SectionHeader className={BIG_SECTION_HEADER_CLASS_NAME} text="More Events Coming Soon!" isSecondary>
-
-        <a href="https://www.facebook.com/pg/animationutd/events/?ref=page_internal">
-          <Button text="View Our Events On Facebook" isSecondary />
-        </a>
-      </SectionHeader>
     </div>
   </section>
 );
