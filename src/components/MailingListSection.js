@@ -5,7 +5,7 @@ import classNames from "classnames";
 import FacebookIcon from "react-icons/lib/fa/facebook-square";
 import MailIcon from "react-icons/lib/fa/envelope";
 import InstagramIcon from "react-icons/lib/fa/instagram";
-import { FaDiscord } from "react-icons/fa";
+import DiscordIcon from "react-icons/lib/fa/discord";
 import SectionHeader from "../common/SectionHeader";
 import Button from "../common/Button";
 import Input from "../common/Input";
@@ -87,7 +87,7 @@ class MailingListSection extends Component {
               <InstagramIcon /> 
             </a>
             <a href="https://discord.gg/APdaNBb" target="_blank" rel="noopener noreferrer">
-              <FaDiscord />
+              <DiscordIcon />
             </a>
           </Row> :
           <Row className="links-row" /> 
