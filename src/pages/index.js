@@ -6,7 +6,6 @@ import moment from "moment";
 import HeroSection from "../components/HeroSection";
 import Header from "../common/Header";
 import MissionStatementSection from "../components/MissionStatementSection";
-import Discord from "../components/HomePageDiscord"
 import PastSpeakers from "../components/HomePagePastSpeakers";
 import PhotoReelSection from "../components/PhotoReelSection";
 import EventsSection from "../components/HomePageEventsSection";
@@ -44,7 +43,6 @@ class IndexPage extends Component {
       <div>
         {this.renderHeroSection()}
         <Header isTransparent={this.state.isAtHeroSection} />
-        <Discord />
         <Element name={EVENTS_SECTION_SCROLL_ROUTE}>
           <EventsSection events={events} />
         </Element>
