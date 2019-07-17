@@ -1,6 +1,6 @@
 ---
 firstName: "kestrel"
 lastName: "kiegel"
-position: "Event Coordinator"
+position: "Vice President"
 linkedin: "https://www.linkedin.com/in/kestrel-kiegel"
 ---

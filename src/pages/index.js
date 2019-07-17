@@ -46,7 +46,6 @@ class IndexPage extends Component {
         <Element name={EVENTS_SECTION_SCROLL_ROUTE}>
           <EventsSection events={events} />
         </Element>
-        <PastSpeakers />
         <PhotoReelSection />
         <MissionStatementSection />
         <MailingListSection />
