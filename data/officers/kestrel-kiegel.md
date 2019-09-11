@@ -1,6 +1,6 @@
 ---
 firstName: "kestrel"
 lastName: "kiegel"
-position: "Vice President"
+position: "President"
 linkedin: "https://www.linkedin.com/in/kestrel-kiegel"
 ---
