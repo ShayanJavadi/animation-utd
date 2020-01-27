@@ -25,78 +25,120 @@ class MailingListSection extends Component {
   state = {
     email: null,
     result: null,
-    message: "",
-  }
+    message: ""
+  };
 
-  resetState = () => setTimeout(() => this.setState({ result: null, message: "" }), 3000);
+  resetState = () =>
+    setTimeout(() => this.setState({ result: null, message: "" }), 3000);
 
   // TODO: fix this by adding the required fields for the form
   handleSubmit = e => {
     e.preventDefault();
     e.stopPropagation();
+    console.log(e);
     try {
-      addToMailchimp(this.state.email)
+      addToMailchimp(this.state.email, { FNAME: "N-A", LNAME: "N-A" })
         .then(result => {
           // Mailchimp always returns a 200 response
           // So we check the result for MC errors & failures
           if (result.result !== `success`) {
-            this.setState({
-              status: `error`,
-              message: result.msg,
-            }, this.resetState)
+            this.setState(
+              {
+                status: `error`,
+                message: result.msg
+              },
+              this.resetState
+            );
           } else {
             // Email address succesfully subcribed to Mailchimp
-            this.setState({
-              status: `success`,
-              message: result.msg,
-            }, this.resetState)
+            this.setState(
+              {
+                status: `success`,
+                message: result.msg
+              },
+              this.resetState
+            );
           }
         })
         .catch(err => {
           // Network failures, timeouts, etc
-          this.setState({
-            status: `error`,
-            message: err,
-          }, this.resetState)
-        })
+          this.setState(
+            {
+              status: `error`,
+              message: err
+            },
+            this.resetState
+          );
+        });
     } catch (error) {
-      this.setState({
-        status: `error`,
-        message: "Invalid email entered",
-      }, this.resetState)
+      this.setState(
+        {
+          status: `error`,
+          message: "Invalid email entered"
+        },
+        this.resetState
+      );
     }
-  }
+  };
 
   renderContent() {
     return (
-      <SectionHeader text="Join our mailing list" className={classNames(SECTION_HEADER_CLASS_NAME, this.props.isInModal && "is-in-modal")}>
+      <SectionHeader
+        text="Join our mailing list"
+        className={classNames(
+          SECTION_HEADER_CLASS_NAME,
+          this.props.isInModal && "is-in-modal"
+        )}
+      >
         <HTMLContent html={this.state.message} />
         <Row className="input-row">
           <div className="email-input-container">
-            <Input placeholder="example@domain.com" onChange={e => this.setState({ email: e.target.value })}/>
+            <Input
+              placeholder="example@domain.com"
+              onChange={e => this.setState({ email: e.target.value })}
+            />
           </div>
           <div className="add-button-container">
-            <Button text="Add me!" onPress={this.handleSubmit} type="submit" raised hasShadow hasDarkShadow disabled={isEmpty(this.state.email)} />
+            <Button
+              text="Add me!"
+              onPress={this.handleSubmit}
+              type="submit"
+              raised
+              hasShadow
+              hasDarkShadow
+              disabled={isEmpty(this.state.email)}
+            />
           </div>
         </Row>
-        {
-          this.props.isInModal ?
-          <Row className="links-row"> 
-            <a href="https://www.facebook.com/animationutd/" target="_blank" rel="noopener noreferrer">
+        {this.props.isInModal ? (
+          <Row className="links-row">
+            <a
+              href="https://www.facebook.com/animationutd/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FacebookIcon />
             </a>
-            <a href="mailto:utdanimationguild@gmail.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="mailto:utdanimationguild@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <MailIcon />
             </a>
-            <a href="https://www.instagram.com/utdallas_ag/" target="_blank" rel="noopener noreferrer">
-              <InstagramIcon /> 
+            <a
+              href="https://www.instagram.com/utdallas_ag/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramIcon />
             </a>
-            
-          </Row> :
-          <Row className="links-row" /> 
-        }
+          </Row>
+        ) : (
+          <Row className="links-row" />
+        )}
       </SectionHeader>
-    )
+    );
   }
 
   render() {
@@ -106,12 +148,10 @@ class MailingListSection extends Component {
 
     return (
       <section className={PACKAGE_NAME}>
-        <div className="container">
-          {this.renderContent()}
-        </div>
+        <div className="container">{this.renderContent()}</div>
       </section>
-    )
+    );
   }
-};
+}
 
 export default MailingListSection;
