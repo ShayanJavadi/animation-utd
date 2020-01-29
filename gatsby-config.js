@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mailchimp",
       options: {
-        endpoint: "https://facebook.us16.list-manage.com/subscribe/post?u=5ae11bc484c4c935998f1fcbc&amp;id=01b1dca7fa", // see instructions section below
+        endpoint: "https://facebook.us16.list-manage.com/subscribe/post?u=5ae11bc484c4c935998f1fcbc&amp;id=f975ddc6d4", // see instructions section below
       },
     },
     "gatsby-transformer-sharp",
