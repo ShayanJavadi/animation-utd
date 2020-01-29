@@ -54,7 +54,7 @@ class Header extends Component {
     isModalVisible: false,
     isDropDownOpen: false,
   }
-
+  
 
   getClassNames = (isTransparent) => {
     return (
@@ -77,7 +77,7 @@ class Header extends Component {
       </a>
     );
   }
-
+  
   renderMenuItem = (to, text) => {
     return (
       <div className="navbar-item text-link">
@@ -88,7 +88,7 @@ class Header extends Component {
     );
   }
 
-
+  
   renderMenu = (isTransparent) => {
     return (
       <div className="navbar-menu" id="navMenu">
